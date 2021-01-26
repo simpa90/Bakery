@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General features*/
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+}
+
+.nav-bar{
+    position: absolute;
+    top: 35px;
+    right: 100px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.nav-bar a:hover{
+    color: #c2a56f;
+}
+
+.current a:active{
+    color: #c2a56f;
+}
+
+.btn{
+    border: 1px solid #553920;
+    background-color: #6e4827;
+    color: #ffffff;
+    border-radius: 6px;
+    margin-top:30px;
+    padding: 10px;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #c2a56f;
+    border: 1px solid #6e4827;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #c2a56f;
+    transform: translateY(2px);
+}
+
+footer{
+    width: 100%;
+    padding: 15px 15px;
+    background-color: #6e4827;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+ 
+/*Home page*/
+
+#showcase{
+    position: relative;
+    background-image: url('/img/bakery.jpg');
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase h1{
+    margin-top: 40px;
+}
+
+#section-a{
+    padding: 40px;
+    background-color: #e0c29f;
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    text-align: justify;
+}
+
+#section-b{
+    padding: 40px;
+    background-color: #dfb88b;
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    text-align: justify;
+}
+
+#section-c{
+    background-color: #6e4827;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+#section-c div{
+    padding: 40px;
+}
+
+#section-c div > .btn{
+    margin-top: 25px;
+}
+
+#section-c div > h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#box-1{
+    background-color: #a07651;
+}
+
+#box-2{
+    background-color: #e0c29f;
+}
+
+#box-3{
+    background-color: #6e4827;
+}
+
+/*About-Danny's*/
+
+#showcase{
+    position: relative;
+    background-image: url('/img/bakery.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #6e4827;
+}
+
+.container{
+    background-color: #e0c29f;
+}
+
+#fig-a{
+    margin: 60px 10px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fig-a img,#fig-b img {
+    border: 2px solid #6e4827;
+}
+
+#caption-a{
+    font: 16px italic;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    padding: 5px;
+}
+
+#caption-b{
+    font: 16px italic;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-a{
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+}
+
+#content-a .story{
+    margin: 0 30px;
+}
+
+#content-a .story h1{
+    margin: 10px 0;
+}
+
+#content-b{
+    margin: 30px 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+}
+
+#content-b .story h2{
+    margin: 20px 0;
+}
+
+#content-b .story p{
+    margin: 0 25px 0 0;
+}
+
+#fig-b{
+    margin: 84px 10px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#quote{
+    margin: 60px 15px 40px;
+    font: 25px italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cite{
+   margin: 10px;
+}
+
+/*Gallery*/
+
+
+.back{
+    background-image: url('/img/bakery.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.header{
+    background-color: transparent;
+    padding: 28px;
+}
+
+.gallery{
+   color: #ffffff;
+}
+
+#gallery-title{
+    margin:  28px 0 20px;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid-img{
+    padding: 0 30px 30px;
+}
+
+.grid-img img{
+    border: none;
+    padding: 0px;
+}
+
+.grid-img:hover{
+    opacity: 0.8;
+    transition: 0.9s;
+    transform: scale(1.5);
+}
+
+.grid-img img{
+    border: 2px solid #6e4827;
+    cursor: pointer;
+}
+
+/*Contact*/
+
+.contact-wrap{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-in{
+    color: #ffffff;
+    padding: 5px;
+    margin: 30px;
+    text-align: center;
+}
+
+.contact-in:nth-child(1){
+    flex: 35%;
+    background-image: url('../img/front_side_bakery.jpg');
+    background-position: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.contact-in:nth-child(2){
+    flex: 45%;
+    background-color: #6e4827;
+    border-radius: 30px;
+    margin: 45px 10px;
+}
+
+.contact-in:nth-child(3){
+    flex:25%;
+    margin: auto 30px;
+}
+
+.contact-in h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 30px 10px;
+    color: #ffffff;
+}
+
+.contact-in h2{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 5px 10px;
+    color: #ffffff;
+}
+
+.contact-in h2 i{
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 60px;
+    background-color: #ffffff;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.contact-in h3{
+    font-weight: 500;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+    margin: 10px 0 20px 10px;
+}
+
+.contact-in ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in ul li{
+    display: inline-block;
+    margin: 0 0 10px 15px;
+}
+
+.contact-in ul li a{
+    color: #000000;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.contact-in ul li a i{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.contact-in form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-in label{
+    margin-left: 25px;
+    text-align: left;
+}
+
+.contact-in input{
+    padding: 10px;
+    margin: 0 15px 10px;
+}
+
+.contact-in textarea{
+    height: 140px;
+    margin: 0 15px 10px;
+}
+
+#submit{
+    width: 30%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+}
+
+#submit:hover{
+    background-color: #e9af7f;
+    border: 1px solid #000000;
+    color: #000;
+    font-weight: bold;
+}
+
+.contact-in iframe{
+    width: 100%;
+    height: 340px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px){
+    .nav-bar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px;
+    }
+
+    #gallery-title{
+        text-align: center;
+        margin: 50px 0 20px;
+        line-height: 1;
+        width: auto;
+    }
+
+    #section-c{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .back{
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .contact-in:nth-child(1){
+        flex: 50%;
+    }
+    
+    .contact-in:nth-child(2){
+        flex: 50%;
+    }
+    
+    .contact-in:nth-child(3){
+        flex: 35%;
+    }
+}
+
+@media (max-width: 580px){
+    #section-c{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 620px){
+    .nav-bar{
+        text-align: center;
+    }
+    
+    #content-a, #content-b{
+        flex-wrap: wrap;
+    }
+
+    #fig-a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #fig-b{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #caption-a{
+        display: flex;
+        justify-content: left;
+    }
+
+    #quote{
+        margin-bottom: -15px;
+    }
+}
+
+@media (max-width: 990px){
+    footer{
+        padding-bottom: 20px;
+    }
+}   
+
+@media (max-width: 1290px){
+    footer{
+        padding-bottom: 20px;
+    }
+}    
